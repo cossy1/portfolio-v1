@@ -18,9 +18,9 @@ export default function About() {
 
                     <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <li className="text-sm"><strong>Languages:</strong> TypeScript, JavaScript</li>
-                        <li className="text-sm"><strong>Frameworks:</strong> React, Vite, TailwindCSS</li>
+                        <li className="text-sm"><strong>Frameworks:</strong> React, NextJs, TailwindCSS, Redux</li>
                         <li className="text-sm"><strong>Style:</strong> Atomic components, accessible HTML</li>
-                        <li className="text-sm"><strong>Tools:</strong> Git, CI, Testing</li>
+                        <li className="text-sm"><strong>Tools:</strong> Git, CI, Testing, Jira, Slack</li>
                     </ul>
                 </div>
                 <div className="flex items-center justify-center">

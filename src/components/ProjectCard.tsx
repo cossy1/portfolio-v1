@@ -3,8 +3,8 @@ import type { Project } from "./About";
 export default function ProjectCard({ project }: { project: Project }) {
     return (
         <article className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition-shadow">
-            <div className="h-40 w-full bg-gray-100 rounded-md overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+            <div className="h-40 w-full bg-gray-100 rounded-md border border-gray-100 overflow-hidden">
+                <img src={project.image} alt={project.title} className="size-full object-cover" />
             </div>
             <h3 className="mt-3 font-semibold text-lg">{project.title}</h3>
             <p className="text-sm mt-2 text-gray-600">{project.description}</p>

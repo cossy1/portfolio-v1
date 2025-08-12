@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function Hero() {
     return (
         <section className="py-20">
@@ -15,18 +13,18 @@ export default function Hero() {
                         turning complex problems into user-friendly products.
                     </p>
                     <div className="mt-6 flex gap-4">
-                        <Link
-                            to="#projects"
+                        <a
+                            href="#projects"
                             className="inline-block bg-[#0ea5e9] text-white px-5 py-3 rounded-md shadow hover:opacity-95"
                         >
                             See my work
-                        </Link>
-                        <Link
-                            to="#contact"
+                        </a>
+                        <a
+                            href="#contact"
                             className="inline-block border px-5 py-3 rounded-md"
                         >
                             Contact me
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className="flex items-center justify-center">
