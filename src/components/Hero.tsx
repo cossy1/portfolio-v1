@@ -1,3 +1,6 @@
+import Me from "../assets/me.jpg";
+
+
 export default function Hero() {
     return (
         <section className="py-20">
@@ -30,7 +33,7 @@ export default function Hero() {
                 <div className="flex items-center justify-center">
                     <div className="w-full max-w-sm bg-gradient-to-br from-white to-gray-100 rounded-2xl p-6 shadow-lg">
                         <img
-                            src="/src/assets/me.jpg"
+                            src={Me}
                             alt="portfolio hero"
                             className="w-full h-64 object-cover rounded-md"
                         />

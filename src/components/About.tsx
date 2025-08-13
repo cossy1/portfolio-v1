@@ -1,3 +1,5 @@
+import Me from "../assets/me.jpg";
+
 export type Project = {
     id: string;
     title: string;
@@ -25,7 +27,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center justify-center">
                     <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg">
-                        <img src="/src/assets/me.jpg" alt="Your avatar" className="w-full h-full object-cover" />
+                        <img src={Me} alt="Your avatar" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>

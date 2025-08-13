@@ -1,4 +1,8 @@
 import type { Project } from "../components/About";
+import Altmall from "../assets/altmall.jpeg";
+import Digisphire from "../assets/digisphire.png";
+import Laddr from "../assets/laddr.png";
+import Vsured from "../assets/vsured.png";
 
 export const projects: Project[] = [
   {
@@ -16,7 +20,7 @@ export const projects: Project[] = [
     ],
     link: "https://altmall.ng/",
     // repo: "#",
-    image: "/src/assets/altmall.jpeg",
+    image: Altmall,
   },
   {
     id: "1",
@@ -26,7 +30,7 @@ export const projects: Project[] = [
     tags: ["NextJs", "TypeScript", "TailwindCss", "React Query", "Flowbite"],
     link: "https://www.digisphire.com/",
     // repo: "#",
-    image: "/src/assets/digisphire.png",
+    image: Digisphire,
   },
   {
     id: "2",
@@ -36,7 +40,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "TailwindCss", "Redux", "Framer-motion"],
     link: "https://www.digisphire.com/",
     // repo: "#",
-    image: "/src/assets/laddr.png",
+    image: Laddr,
   },
 
   {
@@ -47,6 +51,6 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "TailwindCss", "Localization", "Redux"],
     link: "https://community.vsured.com",
     // repo: "#",
-    image: "/src/assets/vsured.png",
+    image: Vsured,
   },
 ];
