@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 ))}
             </div>
             <div className="mt-4 flex gap-2">
-                {project.link && <a href={project.link} className="text-sm underline">Live</a>}
+                {project.link && <a href={project.link} className="text-sm underline" target="_blank">Live</a>}
                 {project.repo && <a href={project.repo} className="text-sm underline">Code</a>}
             </div>
         </article>

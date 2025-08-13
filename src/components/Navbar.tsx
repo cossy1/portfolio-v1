@@ -7,12 +7,13 @@ export default function Navbar() {
                     <a href="#about" className="hover:text-[#0ea5e9]">About</a>
                     <a href="#projects" className="hover:text-[#0ea5e9]">Projects</a>
                     <a href="#contact" className="hover:text-[#0ea5e9]">Contact</a>
-                    <a href="/resume.pdf" className="px-4 py-2 border rounded-md text-sm">Resume</a>
+                    <a href="/resume.pdf" className="px-4 py-2 border rounded-md text-sm" target="_blank">Resume</a>
                 </nav>
-                <div className="md:hidden">
-                    {/* small burger for mobile - simple anchor for now */}
+                {/* <div className="md:hidden">
+
                     <a href="#projects" className="text-sm">Menu</a>
-                </div>
+                </div> */}
+
             </div>
         </header>
     )
