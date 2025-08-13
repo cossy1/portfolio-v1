@@ -9,10 +9,10 @@ export const projects: Project[] = [
     tags: [
       "React",
       "TypeScript",
+      "Redux",
       "TailwindCss",
       "Styled-Components",
-      "Redux-toolkit",
-      "Re-Charts",
+      // "Re-Charts",
     ],
     link: "https://altmall.ng/",
     // repo: "#",
