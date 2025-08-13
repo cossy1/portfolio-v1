@@ -1,36 +1,59 @@
-import Me from "../assets/me.jpg";
+// import Me from "../assets/me.jpg";
+import { motion } from "framer-motion";
 
 export type Project = {
     id: string;
     title: string;
     description: string;
     tags?: string[];
-    link?: string;       // live demo
-    repo?: string;       // github
+    link?: string; // live demo
+    repo?: string; // github
     image?: string;
-}
+};
 
 export default function About() {
     return (
-        <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <motion.section
+            id="about"
+            className="md:py-20 py-10 bg-gradient-to-b from-white to-gray-50"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+        >
             <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <div className="md:col-span-2">
+                <div
+                    className="md:col-span-2"
+
+                >
                     <h2 className="text-3xl font-bold">About me</h2>
-                    <p className="mt-4 text-gray-600">I am a frontend developer with a focus on building accessible, performant, and delightful user interfaces using React and TypeScript. I care about good UX and ship production-ready code.</p>
+                    <p className="mt-4 text-gray-600">
+                        I am a frontend developer with a focus on building accessible,
+                        performant, and delightful user interfaces using React and
+                        TypeScript. I care about good UX and ship production-ready code.
+                    </p>
 
                     <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <li className="text-sm"><strong>Languages:</strong> TypeScript, JavaScript</li>
-                        <li className="text-sm"><strong>Frameworks:</strong> React, NextJs, TailwindCSS, Redux</li>
-                        <li className="text-sm"><strong>Style:</strong> Atomic components, accessible HTML</li>
-                        <li className="text-sm"><strong>Tools:</strong> Git, CI, Testing, Jira, Slack</li>
+                        <li className="text-sm">
+                            <strong>Languages:</strong> TypeScript, JavaScript
+                        </li>
+                        <li className="text-sm">
+                            <strong>Frameworks:</strong> React, NextJs, TailwindCSS, Redux
+                        </li>
+                        <li className="text-sm">
+                            <strong>Style:</strong> Atomic components, accessible HTML
+                        </li>
+                        <li className="text-sm">
+                            <strong>Tools:</strong> Git, CI, Testing, Jira, Slack
+                        </li>
                     </ul>
                 </div>
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                     <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg">
                         <img src={Me} alt="Your avatar" className="w-full h-full object-cover" />
                     </div>
-                </div>
+                </div> */}
             </div>
-        </section>
-    )
+        </motion.section>
+    );
 }

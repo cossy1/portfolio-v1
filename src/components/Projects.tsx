@@ -1,9 +1,13 @@
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20">
+        <motion.section id="projects" className="md:py-20 py-10" initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}>
             <div className="container">
                 <h2 className="text-3xl font-bold">Selected projects</h2>
                 <p className="mt-2 text-gray-600">A few projects I worked on.</p>
@@ -13,6 +17,6 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
