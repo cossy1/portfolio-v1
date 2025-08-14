@@ -17,7 +17,6 @@ export const projects: Project[] = [
       "Redux",
       "TailwindCss",
       "Styled-Components",
-      // "Re-Charts",
     ],
     link: "https://altmall.ng/",
     // repo: "#",
