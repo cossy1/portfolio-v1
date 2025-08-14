@@ -3,6 +3,7 @@ import Altmall from "../assets/altmall.jpeg";
 import Digisphire from "../assets/digisphire.png";
 import Laddr from "../assets/laddr.png";
 import Vsured from "../assets/vsured.png";
+import PRA from "../assets/pra.jpg";
 
 export const projects: Project[] = [
   {
@@ -52,5 +53,15 @@ export const projects: Project[] = [
     link: "https://community.vsured.com",
     // repo: "#",
     image: Vsured,
+  },
+  {
+    id: "4",
+    title: "Pony Racing Authority",
+    description:
+      "PRA serves as the central hub for one of the UK's fastest growing equestrian sports, designed to both promote and organize pony racing while nurturing young riding talent",
+    tags: ["NextJs", "TypeScript", "TailwindCss", "Redux"],
+    link: "https://www.ponyracingauthority.co.uk/",
+    // repo: "#",
+    image: PRA,
   },
 ];
